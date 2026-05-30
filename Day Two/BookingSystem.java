@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.util.Arrays;
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.Random;
 
 
@@ -28,41 +28,43 @@ public static void main(String [] args){
         System.out.print("Enter an operation");
         String user = input.nextLine();
 
-        switch (user) {
-
-        case 1 -> ("You entered a number"
-
-
-        );
-                        }
+//        switch (user) {
+//
+//        case 1 -> ("You entered a number"
+//
+//
+//        );
+//                        }
 }
-
-    public static void suggestBooks(){
+        //1
+    public static String suggestBooks(){
         int firstPage = 1;
-        int lastPage = 100;
+        int lastPage = 101;
 
     Random random = new Random();
+    if(books.size() < 1){
+        return "Books is empty";
+    }
+    
     int randomBookPage = random.nextInt(firstPage, lastPage);
-    String randomBookName = books.get(random.nextInt(books.size()-1));
+    String randomBookName = books.get(random.nextInt(books.size()));
 
-    System.out.println("The book page is: " + randomBookPage + " and the book name is: " + randomBookName);
+    return "The book page is: " + randomBookPage + " and the book name is: " + randomBookName;
         
 }
-     
+     //2
     public static String addBooks(String bookName){
         
-    for(int index = 0 ; index <= books.size()-1; index++ ){
-        if(books.get(index).equals(bookName)){
+
+        if(books.contains(bookName)){
            return "Book already exists ";
 }
 
-        else{
             books.add(bookName);
-        }
-} 
-        return "Book added successfully";
-}   
 
+        return bookName +" added successfully";
+}   
+        //3
     public static String removeBooks(String bookName){
         
         for(int index = 0 ; index <= books.size()-1; index++){
@@ -71,13 +73,13 @@ public static void main(String [] args){
 
 }
        }
-        return "Book has been successfully removed ";
+        return "Book has been successfully removed";
 }
-
+        //4
     public static String updateBooks(String oldBook, String newBook){
         
         for(int index = 0; index <= books.size()-1; index++){
-            if(books.get[index].equals(oldBook)){
+            if(books.get(index).equals(oldBook)){
                 books.remove(index); 
                 books.add(newBook) ;      
         }
@@ -85,14 +87,14 @@ public static void main(String [] args){
 }
             return "Book has been updated";
 }
-
+        //5
     public static String[] showAllBooks(){
     
     String[] arrays = new String[books.size()];
 
        
     for(int index = 0; index <= books.size()-1; index++){
-      arrays[index] = books[index];
+      arrays[index] = books.get(index);
 }
         return arrays;
 }
