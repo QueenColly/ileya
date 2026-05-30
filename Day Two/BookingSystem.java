@@ -31,12 +31,42 @@ public static void main(String [] args){
         switch (userInput) {
 
         case "1" -> {
+            
             System.out.println("Book for the Day: ");
             String suggestedBook = suggestBooks();
             System.out.println(suggestedBook);    
        }
+        case "2" -> {
+            System.out.println("Enter the book title: ");
+            String bookTitle = input.nextLine();
+            String addBook = addBooks(bookTitle);
+            System.out.println(addBook);
+        }
         
-        
+        case "3" -> {
+             System.out.println("Enter the book title to remove: ");
+             String bookTitle = input.nextLine();
+             String removeBook = removeBooks(bookTitle);
+             System.out.println(removeBook);
+}
+
+        case "4" -> {
+             System.out.println("Enter the old title: ");
+             String oldBook = input.nextLine();
+             System.out.println("Enter the new title: ");
+             String newBook = input.nextLine();
+            
+             String bookUpdate = updateBooks(oldBook,newBook);
+             System.out.println(bookUpdate);
+}
+
+        case "5" -> {
+            System.out.println("View all books: ");
+            String [] allBooks = showAllBooks();
+            for(int index = 0; index < allBooks.length; index++){
+                System.out.println(allBooks[index]);
+            }
+}
        }
 }
         //1
