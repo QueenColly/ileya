@@ -25,16 +25,18 @@ public static void main(String [] args){
                 """;
 
         System.out.println(Menu);
-        System.out.print("Enter an operation");
-        String user = input.nextLine();
+        System.out.print("Enter operation: ");
+        String userInput = input.nextLine();
 
-//        switch (user) {
-//
-//        case 1 -> ("You entered a number"
-//
-//
-//        );
-//                        }
+        switch (userInput) {
+
+        case "1" -> {
+            System.out.println("Book for the Day: ");
+            String suggestedBook = suggestBooks();
+            System.out.println(suggestedBook);    
+       }
+        
+       }
 }
         //1
     public static String suggestBooks(){
