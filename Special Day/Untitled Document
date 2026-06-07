@@ -1,0 +1,7 @@
+1. ask for the number of students enrolled
+2. ask for the number of quizzes taken
+3. collect each students score for every quiz
+4. constraint : score must be between 0 - 100
+5. assign a grade : A(70 - 100), B(60-69), c(50-59), F(below 50)
+7. identify the quiz with the highest average across all students
+7. Display the number of students who passed(score average >= 50)

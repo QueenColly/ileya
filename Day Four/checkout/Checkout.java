@@ -47,7 +47,7 @@ Scanner input = new Scanner(System.in);
 System.out.print("\nWhat is your name (Cashier)? ");
 String cashiersName = input.nextLine();
 
-System.out.println("How much discount will " + customersName + "get? ");
+System.out.print("How much discount will " + customersName + "get? ");
 int discountRate = input.nextInt();
 
 calaculateTotals(discountRate);

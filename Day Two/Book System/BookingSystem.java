@@ -103,7 +103,7 @@ public static void main(String [] args){
         return bookName +" added successfully";
 }   
         //3
-    public static String removeBooks(String bookName){
+    public static String removeBooksh(String bookName){
         
         for(int index = 0 ; index <= books.size()-1; index++){
             if(books.get(index).equals(bookName)){
