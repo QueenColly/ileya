@@ -1,1 +1,6 @@
 
+collect  the total number of students
+collect the total number of subjects offered in a term
+collect the scores for every students and every subjects
+let the scores be between 0 to 100 (do this using your loop)
+display class summary 
