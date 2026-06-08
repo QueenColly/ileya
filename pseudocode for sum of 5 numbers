@@ -1,0 +1,22 @@
+PSEUDOCODE TO DERIVE THE LARGEST SUM OF FIVE NUMBERS
+
+
+1. In your method , pass in five arguments
+
+2. find the sum  of five numbers when (first number is added to second , third , fourth and fifth number)
+
+3. find the sum when (second number is added to third , fourth and fifth number)
+
+4. find the sum when ( third number is  added to fourth and fifth number)
+
+5. find the sum when ( fourth number is added to fifth number)
+
+6. initialise largest to be  to be the first sum and compare with the second sum, thirs sum and fourth sum
+(NOTE :- each stage of sum is comared and the 4 largest is gotten
+
+7. initialise largest sum to be 0 
+
+8. compare all the largest to the largest sum
+
+9. return largest sum
+

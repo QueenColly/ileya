@@ -26,8 +26,8 @@ public static void main(String[] args){
 
             //int counter = 1;
             double []total = new double [studentNumber];
-             double [] newTotal = new double[studentNumber];
-             int []position = new int[studentNumber];
+            double [] newTotal = new double[studentNumber];
+            int []position = new int[studentNumber];
             
             double [] average = new double [studentNumber];
            
@@ -125,12 +125,17 @@ public static void main(String[] args){
 
 
     System.out.println("SUBJECT SUMMARY\n ");
-
+    int sumOfSubjects =0;
     for(int counter = 0; counter <= subjects; counter++){
    
-     System.out.println("Subject " + (counter + 1));
-    System.out.println("Total score is: " + total[counter]);
+   
+        System.out.println("Subject " + (counter + 1)+ ": ");
         
+        System.out.println("   Highest scoring student is: " + newTotal[counter]);
+        System.out.println("   Total score is: " + total[counter]);
+        System.out.println("   Average score is: " + average[counter]);
+        System.out.println();
+            
         }
         
   //  System.out.print("Highest scoring student is: Student " +(index + 1) + "scoring" + (counter + 1));
